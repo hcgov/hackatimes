@@ -125,6 +125,7 @@ body{
     }
 }
 #header{
+    background: linear-gradient(90deg,rgba(101, 183, 201, 1) 0%, rgba(196, 135, 155, 1) 18%, rgba(166, 3, 3, 1) 37%, rgba(168, 94, 3, 1) 49%, rgba(166, 155, 0, 1) 60%, rgba(1, 61, 11, 1) 73%, rgba(0, 50, 82, 1) 85%, rgba(53, 3, 61, 1) 100%);
     background-color: #333333;
     min-width: 100%;
     display: flex;
