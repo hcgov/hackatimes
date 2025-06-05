@@ -63,10 +63,11 @@ function enter() {
             
                 }
             }
-            else if(localStorage.getItem("type") == "Normal" && localStorage.getItem("article") == "Parliament Celebrates 2025 Pride Month") {
+            else if(localStorage.getItem("type") == "Normal") {
+                let target = localStorage.getItem("article")
                 for (let i = 0; i < data.length; i++) {
                     let con = data[i].title;
-                    if (con.includes("Pride")) {
+                    if (con.includes(target)) {
                         document.getElementById("title").textContent = data[i].title;
                         document.getElementById("author").textContent = data[i].author;
                         document.getElementById("date").textContent = data[i].date;

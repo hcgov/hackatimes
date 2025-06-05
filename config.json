@@ -1,8 +1,8 @@
 [
     {
-        "broadcast": false,
+        "broadcast": true,
         "broadcast-link": null,
         "headline": "REPUBLIC AMMENDMENT GETS RESOUNDING SUPPORT",
-        "breaking": true
+        "breaking": false
     }
 ]
