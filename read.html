@@ -62,6 +62,18 @@ function enter() {
                     break;
                 }
             }
+            else if(localStorage.getItem("type") == "Normal" && localStorage.getItem("article") == "Parliament Celebrates 2025 Pride Month") {
+                for (let i = 0; i < data.length; i++) {
+                    let con = data[i].title;
+                    if (con.includes("Pride")) {
+                        document.getElementById("title").textContent = data[i].title;
+                        document.getElementById("author").textContent = data[i].author;
+                        document.getElementById("date").textContent = data[i].date
+                        document.getElementById("content").innerHTML = data[i].content
+                    }
+                    break;
+                }
+            }
         })
 </script>
 <script src="main.js"></script>
