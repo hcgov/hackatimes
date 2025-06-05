@@ -56,10 +56,11 @@ function enter() {
                     if (con.includes("BREAKING")) {
                         document.getElementById("title").textContent = data[i].title.substring(15);
                         document.getElementById("author").textContent = data[i].author;
-                        document.getElementById("date").textContent = data[i].date
-                        document.getElementById("content").innerHTML = data[i].content
+                        document.getElementById("date").textContent = data[i].date;
+                        document.getElementById("content").innerHTML = data[i].content;
+                        break;
                     }
-                    break;
+            
                 }
             }
             else if(localStorage.getItem("type") == "Normal" && localStorage.getItem("article") == "Parliament Celebrates 2025 Pride Month") {
@@ -68,10 +69,10 @@ function enter() {
                     if (con.includes("Pride")) {
                         document.getElementById("title").textContent = data[i].title;
                         document.getElementById("author").textContent = data[i].author;
-                        document.getElementById("date").textContent = data[i].date
-                        document.getElementById("content").innerHTML = data[i].content
+                        document.getElementById("date").textContent = data[i].date;
+                        document.getElementById("content").innerHTML = data[i].content;
+                        break;
                     }
-                    break;
                 }
             }
         })
