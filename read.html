@@ -54,7 +54,7 @@ function enter() {
                 for (let i = 0; i < data.length; i++) {
                     let con = data[i].type;
                     if (con.includes("Breaking")) {
-                        document.getElementById("title").textContent = data[i].title.substring(15);
+                        document.getElementById("title").textContent = data[i].title;
                         document.getElementById("author").textContent = data[i].author;
                         document.getElementById("date").textContent = data[i].date;
                         document.getElementById("content").innerHTML = data[i].content;
