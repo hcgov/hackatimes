@@ -21,6 +21,7 @@
         }
         #content {
             color: black;
+            text-align: left;
         }
     </style>
     <title>Article | Hackatimes</title>
@@ -72,6 +73,19 @@ function enter() {
                         document.getElementById("author").textContent = data[i].author;
                         document.getElementById("date").textContent = data[i].date;
                         document.getElementById("content").innerHTML = data[i].content;
+                        break;
+                    }
+                }
+            }
+            else if(localStorage.getItem("type") == "Opinion") {
+                let target = localStorage.getItem("article")
+                for (let i = 0; i < data.length; i++) {
+                    let con = data[i].title;
+                    if (con.includes(target)) {
+                        document.getElementById("title").textContent = data[i].title;
+                        document.getElementById("author").textContent = data[i].author;
+                        document.getElementById("date").textContent = data[i].date;
+                        document.getElementById("content").innerHTML = "<em>*DISCLAIMER: The following is opinion/satire, and may not contain factual information <br><br><br></em>" + data[i].content;
                         break;
                     }
                 }
